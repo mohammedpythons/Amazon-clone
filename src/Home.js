@@ -12,14 +12,14 @@ function Home() {
 
       <div className="home__row">
         <Product
-          id="123123354"
+          id="1236985"
           title="amaxone Echo (3rd generation) | smart speaker with Alexa"
           price="550"
           rating={5}
           image="https://media.very.co.uk/i/very/P6LTG_SQ1_0000000071_CHARCOAL_SLf?%24300x400_retinamobilex2%24"
         />
         <Product
-          id="123123354"
+          id="2231458523354"
           title="Samsung Curved LED Gaming"
           price="222"
           rating={3}
@@ -29,21 +29,21 @@ function Home() {
 
       <div className="home__row">
         <Product
-          id="123123354"
+          id="3231263213354"
           title="500 Robotic Vacuum"
           price="303.91"
           rating={3}
           image="https://m.media-amazon.com/images/I/71h2UbdETKL._AC_SL1353_.jpg"
         />
         <Product
-          id="123123354"
+          id="42312335986354"
           title="Hornbill Smart Door Lock"
           price="179.99"
           rating={2}
           image="https://m.media-amazon.com/images/I/61doB9T50iL._AC_SL1500_.jpg"
         />
         <Product
-          id="123123354"
+          id="523123348527754"
           title="Refoss Smart Wi-Fi Garage Door Opener"
           price="49.99"
           rating={4}
@@ -53,7 +53,7 @@ function Home() {
 
       <div className="home__row">
         <Product
-          id="123123354"
+          id="62312338999954"
           title="Samsung - 55 QN60A QLED 4K UHD Smart TV"
           price="1,098"
           rating={5}

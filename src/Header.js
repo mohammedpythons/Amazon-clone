@@ -6,7 +6,8 @@ import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 import { useStateValue } from "./StateProvider";
 
 function Header() {
-  const [{ basket }, dispatch] = useStateValue
+  const [{ basket }] = useStateValue()
+  console.log("this is from header: ", basket)
   return (
     <nav className="header">
       {/* logo on the left -> img */}
@@ -52,7 +53,7 @@ function Header() {
           {/* shopping basket icon */}
           <ShoppingBasketIcon />
           {/* numbers of items in the basket */}
-          <spam className="header__option__lineTwo header__basketCount">{basket.length}</spam>
+          <spam className="header__option__lineTwo header__basketCount">{basket?.length}</spam>
         </div>
       </Link>
     </nav>
