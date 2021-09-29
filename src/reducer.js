@@ -1,27 +1,23 @@
 export const initialState = {
-  basket: [
-    {
-      id: "123123354",
-      image:
-        "https://media.very.co.uk/i/very/P6LTG_SQ1_0000000071_CHARCOAL_SLf?%24300x400_retinamobilex2%24",
-      price: "550",
-      rating: 5,
-      title: "amaxone Echo (3rd generation) | smart speaker with Alexa",
-    },
-    {
-        id: "123123354",
-        image:
-          "https://media.very.co.uk/i/very/P6LTG_SQ1_0000000071_CHARCOAL_SLf?%24300x400_retinamobilex2%24",
-        price: "550",
-        rating: 5,
-        title: "amaxone Echo (3rd generation) | smart speaker with Alexa",
-      },
-  ],
+  basket: [],
   user: null,
 };
 
+
+export const getBasketTotal = (basket) =>
+    basket?.reduce((amount, item) => Number(item.price) + amount, 0);
+
+
+
+
+
 function reducer(state, action) {
   switch (action.type) {
+      case "SET_USER":
+          return {
+              ...state,
+              user: action.user,
+          };
     case "ADD_TO_BASKET":
       // LOGIC FOR ADDING ITEM TO BASKET
       return {
@@ -35,7 +31,7 @@ function reducer(state, action) {
       let newBasket = [...state.basket];
 
       const index = state.basket.findIndex(
-        (basketItem) => basketItem.item_id === action.id
+        (basketItem) => basketItem.title === action.title
       );
       if (index >= 0) {
         // item exists in basket

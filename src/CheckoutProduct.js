@@ -8,7 +8,7 @@ export default function CheckoutProduct(props) {
       // remove item from basket...
       dispatch({
           type: "REMOVE_FROM_BASKET",
-          item_id
+          title
       })
   }
   return (
